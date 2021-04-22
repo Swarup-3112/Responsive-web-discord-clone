@@ -1,0 +1,409 @@
+@font-face{
+    font-family: "Whitney Light";
+    src: url("./assets/fonts/whitneylight.woff") format("woff");
+}
+
+@font-face{
+    font-family: "Whitney Medium";
+    src: url("./assets/fonts/whitneymedium.woff") format("woff");
+}
+
+@font-face{
+    font-family: "Whitney Bold";
+    src: url("./assets/fonts/whitneybold.woff") format("woff");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 2rem;
+    font-family: "Whitney Light";
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+img{
+    width: 100%;
+    display: inline-block;
+}
+
+/* -----------------HERO-SECTION--------------------- */
+
+.hero{
+    background-image: url(./assets/images/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.main-header{
+    height: 8rem;
+}
+
+.container{
+    max-width: 126rem;
+    margin: 0 auto;
+    padding: 0 3.4rem;
+}
+
+.logo{
+    width: 13.4rem;
+}
+
+.main-nav{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-list{
+    display: none;
+}
+
+.nav-items-right{
+    display: flex;
+    align-items: center;
+}
+
+.btn-small{
+    font-size: 1.4rem;
+    padding: 0.7rem 1.6rem;
+    border-radius: 4rem;
+}
+
+.btn-light{
+    background-color: white;
+    color: #23272a;
+    transition: color 0.3s;
+}
+
+.btn:hover{
+    box-shadow: 0 0.8rem 1.5rem rgba(0,0,0,0.2);
+}
+
+.btn-light:hover{
+    color: #7289da;
+}
+
+.mobile-toggle{
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    display: flex;
+    margin-left: 1.5rem;
+}
+
+
+.collaboration, .voice-channel, .moderation-tool, .video-call{
+    padding: 5.6rem 0;
+}
+
+.voice-channel, .video-call, .download{
+    background-color: #f6f6f6;
+}
+
+.btn{
+    font-family: "Whitney Medium";
+}
+
+/* ------------------HERO-SECTION-CONTENTS---------------------- */
+
+.hero-content{
+    color: white;
+    padding: 5.6rem 0 ;
+}
+
+.title{
+    font-family: "Whitney Bold";
+}
+
+.primary-title{
+    font-size: 4.8rem;
+}
+
+.hero-description{
+    margin-top: 1.3rem;
+    line-height: 3.2rem;
+}
+
+.hero-btn-group .btn-large{
+    margin: 2.4rem 2.4rem 0 0;
+    display: inline-block;
+}
+
+.hero-btn-group .btn-light i{
+    align-self: center;
+    margin-right: 1rem;
+}
+
+.btn-large{
+    padding: 1.6rem 3.2rem;
+    border-radius: 4rem;
+}
+
+.btn-dark{
+    background-color: #23272a;
+    color: white;
+}
+
+.btn-dark:hover{
+    background-color: #36393f;
+}
+
+/* ---------------------------collaboration-------------------------- */
+
+.text-group{
+    margin-top: 2rem;
+}
+
+.secondary-title{
+    font-size: 4rem;
+    color: #23272a;
+}
+
+.text-group p{
+    line-height: 3.2rem;
+    margin-top: 2rem;
+}
+
+.wave{
+    color: #f6f6f6;
+    display: block;
+}
+
+/* ----------------voice-channel---------- */
+.wave-inverted{
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+/* --------download-------- */
+
+.download{
+    text-align: center;
+    height: 25.8rem;
+}
+
+.download h2{
+    font-family: "Whitney Medium";
+    margin-bottom: 4rem;
+}
+
+.btn-brand{
+    font-family: "Whitney Medium";
+    background-color: #7289da;
+    color: white;
+    display: inline-flex;
+    transition: background-color 0.3s;
+}
+
+.btn-brand i{
+    align-self: center;
+    margin-right: 1rem;
+}
+
+.btn-brand:hover{
+    background-color: #8ea1e1;
+}
+
+.sparkles{
+    margin: auto 0;
+    max-width: 50rem;
+}
+
+/* ----------------------------footer------------------------------- */
+
+footer{
+    padding: 8rem 0 6.4rem 0;
+    background-color: #23272a;
+}
+
+.main-info-block{
+    margin-bottom: 5.6rem;
+}
+
+.footer-text-group{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-top: 2.4rem;
+    font-size: 1.4rem;
+}
+
+.footer-text-group i{
+    margin-left: 0.8rem;
+    font-size: 1.5rem;
+}
+
+.footer-title{
+    font-size: 3.2rem;
+    font-family: "Whitney Medium";
+    color: #7289da;
+}
+
+.flag{
+    width: 2.4rem;
+    height: auto;
+    margin-right: 0.8rem;
+}
+
+.social{
+    margin-top: 2.4rem;
+}
+
+.social a i{
+    margin-right: 2.4rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.footer-main-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #fff;
+    font-family: "Whitney Light";
+    font-size: 1.6rem;
+}
+
+.list-links{
+    width: 50%;
+    margin-bottom: 4rem;
+}
+
+.list-links li{
+    margin: 1.4rem 0 0 0 ;
+}
+
+.list-head{
+    color: #7289da;
+}
+
+.footer-end{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 0 0 0;
+    border-top: 1px solid #7289da;
+}
+
+/* -------------------------media-------------------------------- */
+
+@media(min-width: 768px){
+    .primary-title{
+        font-size: 5.6rem;
+    }
+
+    .secondary-title{
+        font-size: 4.8rem;
+    }
+
+    .collaboration, .voice-channel, .video-call, .moderation-tool{
+        padding: 6.5rem 0;
+    }
+
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .wrapper img{
+        max-width: 60%;
+    }
+
+    .wrapper .text-group{
+        max-width: 40%;
+        padding: 0 1rem;
+        margin: auto 0;
+    }
+
+    .voice-channel .wrapper{
+        flex-direction: row-reverse;
+    }
+
+    .video-call{
+        text-align: center;
+    }
+
+    .video-call img{
+        margin: 0 auto;
+    }
+
+    .hero-content{
+        width: 60rem;
+    }
+
+    .footer-container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-info-block{
+        width: 30%;
+    }
+
+    .footer-main-list{
+        width: 50%;
+    }
+
+}
+
+@media(min-width: 1024px){
+
+    .collaboration, .voice-channel, .video-call, .moderation-tool{
+        padding: 12rem 0;
+    }  
+    
+    .btn-open{
+        display: none;
+    }
+
+    .nav-list{
+        display: flex;
+    }
+
+    .nav-list a{
+        color: white;
+        font-size: 1.6rem;
+        margin: 0 2rem;
+        font-family: "Whitney Medium";
+    }
+
+    .nav-list a:hover{
+        text-decoration: underline;
+    }
+
+    .hero-content{
+        text-align: center;
+        width: 75rem;
+        margin: 0 auto;
+        padding: 10rem 0;
+    }
+    
+    .list-links{
+        width:25%;
+    }
+
+    .main-info-block{
+        width: 35%;
+    }
+
+    .footer-main-list{
+        width: 70%;
+    }
+}
